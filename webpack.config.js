@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlPlugin = new HtmlWebpackPlugin({
   template: './src/index.html',
-  filename: './index.html'
+  filename: './index.html',
 });
 
 module.exports = {
@@ -11,9 +11,9 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
+        use: ['babel-loader'],
+      },
+    ],
   },
-  plugins: [htmlPlugin]
+  plugins: [htmlPlugin],
 };

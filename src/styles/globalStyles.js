@@ -10,9 +10,10 @@ const GlobalStyles = createGlobalStyle`
   html,
   body {
     max-width: 416px;
-    max-height: 736px;
+    max-height: 812px;
     width: 100%;
     height: 100%;
+    background-color: #F1F3F6;
   }
   #root {
     width: 100%;
@@ -23,7 +24,6 @@ const GlobalStyles = createGlobalStyle`
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 `;
 
 export {

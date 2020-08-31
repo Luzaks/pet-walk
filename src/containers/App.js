@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/index.css';
-import GlobalStyle from '../styles/globalStyle';
+import PlantillaUno from './plantillas/plantillaUno';
+import GlobalStyles from '../styles/globalStyles';
 
 const App = () => (
   <>
-    <h1>Hola</h1>
-    <GlobalStyle />
+    <PlantillaUno />
+    <GlobalStyles />
   </>
 );
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --open --port 3000",
+    "start": "webpack-dev-server --mode=development --open --port 3000 --hot",
     "build": "webpack --mode=production"
   },
   "keywords": [],
@@ -15,9 +15,11 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
     "html-webpack-plugin": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
     "styled-components": "^5.1.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",

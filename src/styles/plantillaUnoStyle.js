@@ -8,7 +8,7 @@ const Head = styled.div`
   height: 5%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 6%;
   width: 100%;
 `;
 
@@ -23,6 +23,8 @@ const Footy = styled.div`
 `;
 
 const Properties = styled.div`
+  font-family: Proxima, sans-serif;
+  display: flex;
   width: fit-content;
 `;
 

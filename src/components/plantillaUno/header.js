@@ -1,6 +1,7 @@
 import React from 'react';
 import currentTimeHelper from '../../helpers/currentTimeHelper';
 import { Head, Properties } from '../../styles/plantillaUnoStyle';
+import Icons from './Icons';
 
 const Header = () => (
   <Head>
@@ -8,7 +9,7 @@ const Header = () => (
       { currentTimeHelper() }
     </Properties>
     <Properties>
-      something
+      <Icons />
     </Properties>
   </Head>
 );

@@ -14,16 +14,19 @@ const Head = styled.div`
 
 const Body = styled.div`
   width: 100%;
-  height: 87%;
+  height: 86%;
 `;
 
 const Footy = styled.div`
   width: 100%;
-  height: 8%;
+  height: 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 8%;
+  border-radius: 20px 20px 0 0;
+  background-color: #D1FFFD;
+  box-shadow: 0px -10px 47px 0px #E5E6E8;
 `;
 
 const Properties = styled.div`

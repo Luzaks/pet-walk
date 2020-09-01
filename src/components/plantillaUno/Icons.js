@@ -1,12 +1,14 @@
 import React from 'react';
-import Battery from '../svgs/Battery';
-import Cellular from '../svgs/cellular';
-import WiFi from '../svgs/wifi';
+import {
+  Battery,
+  Cellular,
+  Wifi,
+} from '../svgs/headerSVGS';
 
 const Icons = () => (
   <>
     <Cellular />
-    <WiFi />
+    <Wifi />
     <Battery />
   </>
 );

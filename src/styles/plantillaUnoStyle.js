@@ -8,7 +8,7 @@ const Head = styled.div`
   height: 5%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6%;
+  padding: 0 10%;
   width: 100%;
 `;
 
@@ -20,6 +20,10 @@ const Body = styled.div`
 const Footy = styled.div`
   width: 100%;
   height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
 `;
 
 const Properties = styled.div`

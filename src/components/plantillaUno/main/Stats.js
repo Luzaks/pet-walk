@@ -4,21 +4,24 @@ import {
   SectionTitle,
   StatsCont,
 } from '../../../styles/plantillaUnoStyle';
+import StatsCard from './StatsCard';
 
-const Stats = ({ page }) => {
-  const { accomplished, energy, objectives } = page;
-  return (
-    <StatsCont>
-      <SectionTitle>Stats</SectionTitle>
-      <div>{accomplished}</div>
-      <div>{energy}</div>
-      <div>{objectives}</div>
-    </StatsCont>
-  );
-};
+const Stats = ({ page }) => (
+  <StatsCont>
+    <SectionTitle>Stats</SectionTitle>
+    {
+      page.map(page => (
+        <StatsCard
+          key={page.title}
+          page={page}
+        />
+      ))
+    }
+  </StatsCont>
+);
 
 Stats.propTypes = {
-  page: PropTypes.objectOf(PropTypes.string).isRequired,
+  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
 export default Stats;

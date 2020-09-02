@@ -18,7 +18,7 @@ const PlantillaUno = ({ pets, page }) => (
 
 PlantillaUno.propTypes = {
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
-  page: PropTypes.objectOf(PropTypes.string).isRequired,
+  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
 export default PlantillaUno;

@@ -10,9 +10,26 @@ const initialState = {
   },
   pages: {
     home: {
-      accomplished: '10%',
-      energy: '90%',
-      objectives: '2',
+      cards: [
+        {
+          title: 'Today\'s plan',
+          description: '10% accomplished',
+          colorOne: '#97b8e8',
+          colorTwo: '#9ebdeb',
+        },
+        {
+          title: 'Energy available',
+          description: '90% energy',
+          colorOne: '#52b1e6',
+          colorTwo: '#88d2fa',
+        },
+        {
+          title: 'Weekly objectives',
+          description: '2 walks left',
+          colorOne: '#daa444',
+          colorTwo: '#edb655',
+        },
+      ],
     },
   },
 };

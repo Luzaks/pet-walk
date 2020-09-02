@@ -32,7 +32,7 @@ const SectionTitle = styled.h2`
 `;
 
 const Card = styled(BodyGeneralContainer)`
-  height: 70%;
+  height: 97px;
   padding: 0;
   border: 2px double #fff;
   border-radius: 7px;
@@ -97,7 +97,20 @@ const BlackText = styled(Text)`
 const StatsCont = styled(BodyGeneralContainer)`
   height: 52.5%;
   flex-direction: column;
-  border: 1px dashed red;
+  justify-content: space-between;
+`;
+
+const StatsDescription = styled(BodyGeneralContainer)`
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6%;
+`;
+
+const StatsTitle = styled.h4`
+  font-weight: 600;
+  letter-spacing: 0;
 `;
 
 const ButtonCont = styled(BodyGeneralContainer)`
@@ -121,6 +134,13 @@ const WalkButton = styled.button`
   box-shadow: inset  13px 13px 70px -30px #fff;
 `;
 
+const ProgressCont = styled(BodyGeneralContainer)`
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+`;
+
 export {
   Properties,
   BodyTitle,
@@ -135,6 +155,9 @@ export {
   Circle,
   BlackText,
   StatsCont,
+  StatsDescription,
+  StatsTitle,
   ButtonCont,
   WalkButton,
+  ProgressCont,
 };

@@ -10,22 +10,29 @@ import Dashboard from './main/Dashboard';
 import Stats from './main/Stats';
 import StartButton from './main/StartButton';
 
-const Main = ({ state }) => (
+const Main = ({ pets, page }) => (
   <Body>
     <BodyTitle>
       <h1>Home</h1>
     </BodyTitle>
     <Dash>
-      <SectionTitle>Dashboard</SectionTitle>
-      <Dashboard state={state} />
+      <SectionTitle>
+        Dashboard
+      </SectionTitle>
+      <Dashboard
+        pets={pets}
+      />
     </Dash>
-    <Stats />
+    <Stats
+      page={page}
+    />
     <StartButton />
   </Body>
 );
 
 Main.propTypes = {
-  state: PropTypes.objectOf(PropTypes.any).isRequired,
+  pets: PropTypes.objectOf(PropTypes.any).isRequired,
+  page: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default Main;

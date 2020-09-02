@@ -4,10 +4,14 @@ import GlobalStyles from '../styles/globalStyles';
 import initialState from '../state/initialState';
 
 const App = () => {
-  const { pets } = initialState;
+  const { pets, pages } = initialState;
+  const { home } = pages;
   return (
     <>
-      <PlantillaUno state={pets} />
+      <PlantillaUno
+        pets={pets}
+        page={home}
+      />
       <GlobalStyles />
     </>
   );

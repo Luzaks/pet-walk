@@ -11,11 +11,10 @@ import {
   BlackText,
 } from '../../../styles/plantillaUnoStyle';
 
-const Dashboard = ({ state }) => {
+const Dashboard = ({ pets }) => {
   const {
     name, brand, age, img, mood,
-  } = state;
-
+  } = pets;
   return (
     <Card>
       <MiniCard>
@@ -47,7 +46,7 @@ const Dashboard = ({ state }) => {
 };
 
 Dashboard.propTypes = {
-  state: PropTypes.objectOf(PropTypes.any).isRequired,
+  pets: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default Dashboard;

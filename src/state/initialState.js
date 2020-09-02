@@ -8,6 +8,13 @@ const initialState = {
     img: Pett,
     mood: 'Happy',
   },
+  pages: {
+    home: {
+      accomplished: '10%',
+      energy: '90%',
+      objectives: '2',
+    },
+  },
 };
 
 export default initialState;

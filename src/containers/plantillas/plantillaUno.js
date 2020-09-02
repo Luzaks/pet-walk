@@ -5,16 +5,20 @@ import { Container } from '../../styles/globalStyles';
 import Main from '../../components/plantillaUno/main';
 import Footer from '../../components/plantillaUno/footer';
 
-const PlantillaUno = ({ state }) => (
+const PlantillaUno = ({ pets, page }) => (
   <Container>
     <Header />
-    <Main state={state} />
+    <Main
+      pets={pets}
+      page={page}
+    />
     <Footer />
   </Container>
 );
 
 PlantillaUno.propTypes = {
-  state: PropTypes.objectOf(PropTypes.any).isRequired,
+  pets: PropTypes.objectOf(PropTypes.any).isRequired,
+  page: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default PlantillaUno;

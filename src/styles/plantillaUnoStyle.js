@@ -66,6 +66,24 @@ const Image = styled.div`
   background-position: 35% 20%;
 `;
 
+const MoodCont = styled(BodyGeneralContainer)`
+  width: fit-content;
+`;
+
+const Circle = styled.div`
+  width: 6.5px;
+  height: 6.5px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #1d6ce3;
+`;
+
+const BlackText = styled(Text)`
+  color: #1d6ce3;
+  width: fit-content;
+  margin-top: 3%;
+`;
+
 export {
   Properties,
   BodyTitle,
@@ -75,4 +93,7 @@ export {
   PetInfo,
   Text,
   Image,
+  MoodCont,
+  Circle,
+  BlackText,
 };

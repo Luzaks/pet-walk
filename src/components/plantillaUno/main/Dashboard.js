@@ -6,11 +6,14 @@ import {
   MiniCard,
   PetInfo,
   Text,
+  MoodCont,
+  Circle,
+  BlackText,
 } from '../../../styles/plantillaUnoStyle';
 
 const Dashboard = ({ state }) => {
   const {
-    name, brand, age, img,
+    name, brand, age, img, mood,
   } = state;
 
   return (
@@ -29,7 +32,16 @@ const Dashboard = ({ state }) => {
           {age}
         </Text>
       </PetInfo>
-      <MiniCard>2</MiniCard>
+      <MiniCard>
+        <MoodCont>
+          <Circle />
+          <Circle />
+          <Circle />
+        </MoodCont>
+        <BlackText>
+          {mood}
+        </BlackText>
+      </MiniCard>
     </Card>
   );
 };

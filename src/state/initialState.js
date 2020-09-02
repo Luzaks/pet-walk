@@ -6,7 +6,7 @@ const initialState = {
     brand: 'American Pit Bull Terrier',
     age: '6 months old',
     img: Pett,
-    emotion: 'Happy',
+    mood: 'Happy',
   },
 };
 

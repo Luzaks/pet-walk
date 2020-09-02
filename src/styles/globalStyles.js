@@ -36,8 +36,42 @@ const Container = styled.div`
   height: 100%;
 `;
 
+const Head = styled.div`
+  color: #BFC0BF;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  height: 5%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+`;
+
+const Body = styled.div`
+  width: 100%;
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Footy = styled.div`
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  border-radius: 20px 20px 0 0;
+  background-color: #D1FFFD;
+  box-shadow: 0px -10px 47px 0px #E5E6E8;
+`;
+
 export {
   Container,
+  Head,
+  Body,
+  Footy,
 };
 
 export default GlobalStyles;

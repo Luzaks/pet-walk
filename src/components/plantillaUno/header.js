@@ -1,6 +1,7 @@
 import React from 'react';
 import currentTimeHelper from '../../helpers/currentTimeHelper';
-import { Head, Properties } from '../../styles/plantillaUnoStyle';
+import { Head } from '../../styles/globalStyles';
+import { Properties } from '../../styles/plantillaUnoStyle';
 import Icons from './Icons';
 
 const Header = () => (

@@ -7,6 +7,8 @@ import {
   SectionTitle,
 } from '../../styles/plantillaUnoStyle';
 import Dashboard from './main/Dashboard';
+import Stats from './main/Stats';
+import StartButton from './main/StartButton';
 
 const Main = ({ state }) => (
   <Body>
@@ -17,6 +19,8 @@ const Main = ({ state }) => (
       <SectionTitle>Dashboard</SectionTitle>
       <Dashboard state={state} />
     </Dash>
+    <Stats />
+    <StartButton />
   </Body>
 );
 

@@ -94,6 +94,33 @@ const BlackText = styled(Text)`
   margin-top: 3%;
 `;
 
+const StatsCont = styled(BodyGeneralContainer)`
+  height: 52.5%;
+  flex-direction: column;
+  border: 1px dashed red;
+`;
+
+const ButtonCont = styled(BodyGeneralContainer)`
+  height: 17.5%;
+  align-items: center;
+  justify-content: center;
+`;
+
+const WalkButton = styled.button`
+  width: 331px;
+  height: 53px;
+  border: none;
+  outline: none;
+  stroke: none;
+  border-radius: 40px;
+  font-family: Proxima, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  background-color: #6ea8ff;
+  box-shadow: inset  13px 13px 70px -30px #fff;
+`;
+
 export {
   Properties,
   BodyTitle,
@@ -107,4 +134,7 @@ export {
   MoodCont,
   Circle,
   BlackText,
+  StatsCont,
+  ButtonCont,
+  WalkButton,
 };

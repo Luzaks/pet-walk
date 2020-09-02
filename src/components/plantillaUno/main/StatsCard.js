@@ -10,7 +10,7 @@ import Progress from '../../svgs/mainSVGS';
 
 const StatsCard = ({ page }) => {
   const {
-    title, description, colorOne, colorTwo,
+    title, description, color, endColor, progress,
   } = page;
   return (
     <Card>
@@ -24,8 +24,9 @@ const StatsCard = ({ page }) => {
       </StatsDescription>
       <ProgressCont>
         <Progress
-          start={colorOne}
-          end={colorTwo}
+          color={color}
+          endColor={endColor}
+          progress={progress}
         />
       </ProgressCont>
     </Card>

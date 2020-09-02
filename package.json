@@ -20,6 +20,7 @@
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",
     "image-webpack-loader": "^6.0.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Card,
+  ImageContainer,
   Image,
   MiniCard,
   PetInfo,
@@ -18,7 +19,9 @@ const Dashboard = ({ pets }) => {
   return (
     <Card>
       <MiniCard>
-        <Image img={img} />
+        <Image img={img}>
+          <ImageContainer />
+        </Image>
       </MiniCard>
       <PetInfo>
         <Text>

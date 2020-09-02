@@ -16,7 +16,7 @@ const initialState = {
           description: '10% accomplished',
           color: '#97b8e8',
           endColor: '#9ebdeb',
-          progress: '20, 100',
+          progress: '10, 100',
         },
         {
           title: 'Energy available',

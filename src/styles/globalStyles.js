@@ -39,7 +39,7 @@ const Container = styled.div`
 const Head = styled.div`
   color: #BFC0BF;
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   height: 5%;
   justify-content: space-between;
@@ -64,7 +64,7 @@ const Footy = styled.div`
   padding: 0 8%;
   border-radius: 20px 20px 0 0;
   background-color: #D1FFFD;
-  box-shadow: 0px -10px 47px 0px #E5E6E8;
+  box-shadow: 0px -10px 47px 0px rgba(110, 168, 255, 0.06);
 `;
 
 export {

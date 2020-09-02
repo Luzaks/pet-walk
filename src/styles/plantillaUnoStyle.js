@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Properties = styled.div`
   font-family: Proxima, sans-serif;
@@ -32,13 +32,13 @@ const SectionTitle = styled.h2`
 `;
 
 const Card = styled(BodyGeneralContainer)`
-  height: 97px;
+  height: 95px;
   padding: 0;
   border: 2px double #fff;
   border-radius: 7px;
-  box-shadow: inset 14px 16px 65px -13px rgba(0,0,0,0.09),
+  box-shadow: inset 14px 16px 65px -13px rgb(1241, 243, 246),
               inset 38px -33px 102px -50px #fff,
-              43px 36px 53px -36px rgba(0,0,0,0.21),
+              21px 21px 28px -16px rgba(110, 168, 255, 0.2),
               -29px -15px 65px -13px #fff;
 `;
 
@@ -67,6 +67,13 @@ const Text = styled.p`
   letter-spacing: 0.01rem;
 `;
 
+const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 168, 255, 0.25);
+  border-radius: 50%; 
+`;
+
 const Image = styled.div`
   width: 80px;
   height: 80px;
@@ -81,7 +88,7 @@ const MoodCont = styled(BodyGeneralContainer)`
 `;
 
 const Circle = styled.div`
-  width: 6.5px;
+  width: 6px;
   height: 6.5px;
   margin: 0 4px;
   border-radius: 50%;
@@ -108,7 +115,8 @@ const StatsDescription = styled(BodyGeneralContainer)`
   padding-left: 6%;
 `;
 
-const StatsTitle = styled.h4`
+const StatsTitle = styled.p`
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
 `;
@@ -131,7 +139,7 @@ const WalkButton = styled.button`
   font-weight: 900;
   color: #fff;
   background-color: #6ea8ff;
-  box-shadow: inset  13px 13px 70px -30px #fff;
+  box-shadow: inset 12px 12px 70px -30px #fff;
 `;
 
 const ProgressCont = styled(BodyGeneralContainer)`
@@ -139,6 +147,18 @@ const ProgressCont = styled(BodyGeneralContainer)`
   height: 100%;
   align-items: center;
   justify-content: center;
+`;
+
+const Progress = keyframes`
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+`;
+
+const Path = styled.path`
+  fill: none;
+  stroke: ${props => props.color};
+  animation: ${Progress} 1s ease-out forwards;
 `;
 
 export {
@@ -150,6 +170,7 @@ export {
   MiniCard,
   PetInfo,
   Text,
+  ImageContainer,
   Image,
   MoodCont,
   Circle,
@@ -160,4 +181,5 @@ export {
   ButtonCont,
   WalkButton,
   ProgressCont,
+  Path,
 };

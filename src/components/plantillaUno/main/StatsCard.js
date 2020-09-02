@@ -5,6 +5,7 @@ import {
   StatsDescription,
   Text,
   ProgressCont,
+  StatsTitle,
 } from '../../../styles/plantillaUnoStyle';
 import Progress from '../../svgs/mainSVGS';
 
@@ -15,9 +16,9 @@ const StatsCard = ({ page }) => {
   return (
     <Card>
       <StatsDescription>
-        <h3>
+        <StatsTitle>
           {title}
-        </h3>
+        </StatsTitle>
         <Text>
           {description}
         </Text>

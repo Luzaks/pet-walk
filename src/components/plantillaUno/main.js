@@ -4,6 +4,7 @@ import { Body } from '../../styles/globalStyles';
 import {
   BodyTitle,
   Dash,
+  SectionTitle,
 } from '../../styles/plantillaUnoStyle';
 import Dashboard from './main/Dashboard';
 
@@ -13,7 +14,7 @@ const Main = ({ state }) => (
       <h1>Home</h1>
     </BodyTitle>
     <Dash>
-      <h2>Dashboard</h2>
+      <SectionTitle>Dashboard</SectionTitle>
       <Dashboard state={state} />
     </Dash>
   </Body>

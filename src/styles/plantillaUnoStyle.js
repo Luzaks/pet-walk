@@ -25,11 +25,21 @@ const Dash = styled(BodyGeneralContainer)`
   flex-direction: column;
 `;
 
+const SectionTitle = styled.h2`
+  position: relative;
+  top: 0;
+  z-index: 2;
+`;
+
 const Card = styled(BodyGeneralContainer)`
   height: 70%;
   padding: 0;
   border: 2px double #fff;
   border-radius: 7px;
+  box-shadow: inset 14px 16px 65px -13px rgba(0,0,0,0.09),
+              inset 38px -33px 102px -50px #fff,
+              43px 36px 53px -36px rgba(0,0,0,0.21),
+              -29px -15px 65px -13px #fff;
 `;
 
 const MiniCard = styled.div`
@@ -88,6 +98,7 @@ export {
   Properties,
   BodyTitle,
   Dash,
+  SectionTitle,
   Card,
   MiniCard,
   PetInfo,

@@ -44,7 +44,7 @@ const Head = styled.div`
   height: 5%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 8%;
   width: 100%;
 `;
 

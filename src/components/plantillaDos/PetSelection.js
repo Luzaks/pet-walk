@@ -1,9 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  BodyTitle, Dash,
+  SectionTitle,
+} from '../../styles/plantillaUnoStyle';
+import Selection from './Selection';
+import StartButton from '../plantillaUno/main/StartButton';
 
 const PetSelection = ({ visited, pets, page }) => (
   <>
-    {console.log(visited)}
+    <BodyTitle>
+      <h1>{'<-'}</h1>
+    </BodyTitle>
+    <Dash>
+      <SectionTitle>
+        {visited}
+      </SectionTitle>
+      <Selection
+        pets={pets}
+      />
+    </Dash>
+    <StartButton />
   </>
 );
 

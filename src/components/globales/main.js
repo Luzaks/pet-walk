@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Body } from '../../styles/globalStyles';
-import Home from '../plantillaUno/main/Home';
+import mainHelper from '../../helpers/mainHelper';
 
 const Main = ({ visited, pets, page }) => (
   <Body>
-    <Home
-      visited={visited}
-      pets={pets}
-      page={page}
-    />
+    {
+      mainHelper(visited, pets, page)
+    }
   </Body>
 );
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import {
   Card,
@@ -11,12 +11,20 @@ import Progress from '../svgs/mainSVGS';
 
 const StatsCard = ({ page }) => {
   const {
-    title, description, color, endColor, progress,
+    title, description, color, endColor, progress, selected,
   } = page;
+  const [filled, setFilled] = useState('');
+
+  useEffect(() => {
+    if (selected) setFilled('#1D6CE3');
+    else setFilled('#111212');
+  }, []);
   return (
     <Card>
       <StatsDescription>
-        <StatsTitle>
+        <StatsTitle
+          color={filled}
+        >
           {title}
         </StatsTitle>
         <Text>

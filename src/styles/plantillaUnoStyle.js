@@ -119,6 +119,7 @@ const StatsTitle = styled.p`
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
+  color: ${props => props.color}
 `;
 
 const ButtonCont = styled(BodyGeneralContainer)`

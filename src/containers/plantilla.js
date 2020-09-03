@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../components/globales/header';
+import Header from '../components/globales/Header';
 import { Container } from '../styles/globalStyles';
-import Main from '../components/globales/main';
-import Footer from '../components/globales/footer';
+import Main from '../components/globales/Main';
+import Footer from '../components/globales/Footer';
 
 const PlantillasTemplate = ({ visited, pets, page }) => (
   <Container>

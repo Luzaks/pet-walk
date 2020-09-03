@@ -19,6 +19,7 @@ const initialState = {
           color: '#97b8e8',
           endColor: '#9ebdeb',
           progress: '10, 100',
+          selected: false,
         },
         {
           title: 'Energy available',
@@ -26,6 +27,7 @@ const initialState = {
           color: '#52b1e6',
           endColor: '#8cd4fc',
           progress: '74, 100',
+          selected: false,
         },
         {
           title: 'Weekly objectives',
@@ -33,6 +35,7 @@ const initialState = {
           color: '#d8a242',
           endColor: '#edb756',
           progress: '45, 100',
+          selected: false,
         },
       ],
     },
@@ -42,12 +45,15 @@ const initialState = {
       cards: [
         {
           title: 'On foot',
+          selected: false,
         },
         {
           title: 'On bike',
+          selected: false,
         },
         {
           title: 'Other',
+          selected: true,
         },
       ],
     },

@@ -10,7 +10,7 @@ import Sections from '../globales/Sections';
 import StartButton from './StartButton';
 
 const Home = ({ visited, pets, page }) => {
-  const { section } = page;
+  const { headline } = page;
   return (
     <>
       <BodyTitle>
@@ -18,7 +18,7 @@ const Home = ({ visited, pets, page }) => {
       </BodyTitle>
       <Dash>
         <SectionTitle>
-          {section}
+          {headline}
         </SectionTitle>
         <Dashboard
           pets={pets}

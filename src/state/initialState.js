@@ -11,6 +11,7 @@ const initialState = {
   pages: {
     home: {
       visited: 'Home',
+      headline: 'Dashboard',
       section: 'Stats',
       cards: [
         {

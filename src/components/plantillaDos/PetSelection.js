@@ -7,11 +7,12 @@ import {
 import Selection from './Selection';
 import StartButton from '../plantillaUno/StartButton';
 import Sections from '../globales/Sections';
+import { BackArrow } from '../svgs/methodSVGS';
 
 const PetSelection = ({ visited, pets, page }) => (
   <>
     <BodyTitle>
-      <h1>{'<-'}</h1>
+      <BackArrow />
     </BodyTitle>
     <Dash>
       <SectionTitle>

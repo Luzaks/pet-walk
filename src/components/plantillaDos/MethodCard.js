@@ -17,12 +17,10 @@ const MethodCard = ({ page }) => {
     if (selected) {
       setInset('inset 10px 10px 5px -3px rgba(0,0,0,0.05)');
       setFilled('#1D6CE3');
-    }
-    else {
+    } else {
       setInset('inset 14px 16px 65px -13px rgb(1241, 243, 246)');
       setFilled('#111212');
     }
-
   }, []);
   return (
     <Card

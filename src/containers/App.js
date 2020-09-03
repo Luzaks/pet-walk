@@ -6,10 +6,11 @@ import initialState from '../state/initialState';
 const App = () => {
   const { pets, pages } = initialState;
   const { home } = pages;
-  const { cards } = home;
+  const { cards, visited } = home;
   return (
     <>
       <PlantillaUno
+        visited={visited}
         pets={pets}
         page={cards}
       />

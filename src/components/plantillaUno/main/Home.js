@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Body } from '../../styles/globalStyles';
 import {
   BodyTitle,
   Dash,
   SectionTitle,
-} from '../../styles/plantillaUnoStyle';
-import Dashboard from './main/Dashboard';
-import Stats from './main/Stats';
-import StartButton from './main/StartButton';
+} from '../../../styles/plantillaUnoStyle';
+import Dashboard from './Dashboard';
+import Stats from './Stats';
+import StartButton from './StartButton';
 
-const Main = ({ pets, page }) => (
-  <Body>
+const Home = ({ visited, pets, page }) => (
+  <>
     <BodyTitle>
-      <h1>Home</h1>
+      <h1>{visited}</h1>
     </BodyTitle>
     <Dash>
       <SectionTitle>
@@ -27,12 +26,13 @@ const Main = ({ pets, page }) => (
       page={page}
     />
     <StartButton />
-  </Body>
+  </>
 );
 
-Main.propTypes = {
+Home.propTypes = {
+  visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
   page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
-export default Main;
+export default Home;

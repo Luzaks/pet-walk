@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Footy } from '../../styles/globalStyles';
 import {
   HomeIcon,
@@ -7,13 +8,17 @@ import {
   AccountIcon,
 } from '../svgs/footerSVGS';
 
-const Footer = () => (
+const Footer = ({ visited }) => (
   <Footy>
-    <HomeIcon />
+    <HomeIcon visited={visited} />
     <PetIcon />
     <WorldIcon />
     <AccountIcon />
   </Footy>
 );
+
+Footer.propTypes = {
+  visited: PropTypes.string.isRequired,
+};
 
 export default Footer;

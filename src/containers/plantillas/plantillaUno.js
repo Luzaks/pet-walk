@@ -1,22 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../../components/plantillaUno/header';
+import Header from '../../components/globales/header';
 import { Container } from '../../styles/globalStyles';
-import Main from '../../components/plantillaUno/main';
-import Footer from '../../components/plantillaUno/footer';
+import Main from '../../components/globales/main';
+import Footer from '../../components/globales/footer';
 
-const PlantillaUno = ({ pets, page }) => (
+const PlantillaUno = ({ visited, pets, page }) => (
   <Container>
     <Header />
     <Main
+      visited={visited}
       pets={pets}
       page={page}
     />
-    <Footer />
+    <Footer visited={visited} />
   </Container>
 );
 
 PlantillaUno.propTypes = {
+  visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
   page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };

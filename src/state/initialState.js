@@ -10,6 +10,7 @@ const initialState = {
   },
   pages: {
     home: {
+      visited: 'Home',
       cards: [
         {
           title: 'Today\'s plan',
@@ -23,14 +24,14 @@ const initialState = {
           description: '90% energy',
           color: '#52b1e6',
           endColor: '#8cd4fc',
-          progress: '70, 100',
+          progress: '74, 100',
         },
         {
           title: 'Weekly objectives',
           description: '2 walks left',
           color: '#d8a242',
           endColor: '#edb756',
-          progress: '50, 100',
+          progress: '45, 100',
         },
       ],
     },

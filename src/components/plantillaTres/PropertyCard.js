@@ -17,7 +17,7 @@ const PropertyCard = ({ card }) => {
 };
 
 PropertyCard.propTypes = {
-  card: PropTypes.string.isRequired,
+  card: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default PropertyCard;

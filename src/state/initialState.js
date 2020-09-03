@@ -1,4 +1,6 @@
 import Pett from '../assets/images/dog.png';
+import Map from '../assets/images/Map.png';
+import Position from '../assets/images/positionIcon.png';
 
 const initialState = {
   pets: {
@@ -61,6 +63,8 @@ const initialState = {
     walk: {
       visited: 'Walk',
       section: 'End walk',
+      map: Map,
+      position: Position,
       cards: [
         {
           name: 'Distance',

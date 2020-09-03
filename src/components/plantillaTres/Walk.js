@@ -7,14 +7,22 @@ import WalkCard from './WalkCard';
 
 const Walk = ({ visited, pets, page }) => {
   const { img } = pets;
-  const { section, cards } = page;
+  const {
+    section, cards, map, position,
+  } = page;
   return (
     <>
       <BodyTitle>
         <h1>{visited}</h1>
       </BodyTitle>
+      {console.log(page)}
       <RideCard>
-        <WalkCard img={img} cards={cards} />
+        <WalkCard
+          map={map}
+          img={img}
+          icon={position}
+          cards={cards}
+        />
       </RideCard>
       <WalkedButton
         section={section}

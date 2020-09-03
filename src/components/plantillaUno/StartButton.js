@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ButtonCont,
   WalkButton,
-} from '../../../styles/plantillaUnoStyle';
+} from '../../styles/plantillaUnoStyle';
 
 const StartButton = () => (
   <ButtonCont>

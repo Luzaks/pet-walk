@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   SectionTitle,
   StatsCont,
-} from '../../../styles/plantillaUnoStyle';
+} from '../../styles/plantillaUnoStyle';
 import StatsCard from './StatsCard';
 
 const Stats = ({ page }) => (

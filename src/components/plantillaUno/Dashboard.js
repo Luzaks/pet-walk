@@ -10,7 +10,7 @@ import {
   MoodCont,
   Circle,
   BlackText,
-} from '../../../styles/plantillaUnoStyle';
+} from '../../styles/plantillaUnoStyle';
 
 const Dashboard = ({ pets }) => {
   const {

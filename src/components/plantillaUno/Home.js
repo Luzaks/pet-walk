@@ -4,7 +4,7 @@ import {
   BodyTitle,
   Dash,
   SectionTitle,
-} from '../../../styles/plantillaUnoStyle';
+} from '../../styles/plantillaUnoStyle';
 import Dashboard from './Dashboard';
 import Stats from './Stats';
 import StartButton from './StartButton';

@@ -5,7 +5,7 @@ import {
   SectionTitle,
 } from '../../styles/plantillaUnoStyle';
 import Selection from './Selection';
-import StartButton from '../plantillaUno/main/StartButton';
+import StartButton from '../plantillaUno/StartButton';
 
 const PetSelection = ({ visited, pets, page }) => (
   <>

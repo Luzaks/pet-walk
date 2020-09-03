@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../components/plantillaUno/main/Home';
+import Home from '../components/plantillaUno/Home';
 import PetSelection from '../components/plantillaDos/PetSelection';
 
 const mainHelper = (visited, pets, page) => {

@@ -6,8 +6,8 @@ import {
   Text,
   ProgressCont,
   StatsTitle,
-} from '../../../styles/plantillaUnoStyle';
-import Progress from '../../svgs/mainSVGS';
+} from '../../styles/plantillaUnoStyle';
+import Progress from '../svgs/mainSVGS';
 
 const StatsCard = ({ page }) => {
   const {

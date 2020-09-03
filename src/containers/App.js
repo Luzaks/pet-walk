@@ -1,15 +1,15 @@
 import React from 'react';
-import PlantillaUno from './plantillas/plantillaUno';
+import PlantillasTemplate from './plantilla';
 import GlobalStyles from '../styles/globalStyles';
 import initialState from '../state/initialState';
 
 const App = () => {
   const { pets, pages } = initialState;
-  const { petSelection } = pages;
-  const { cards, visited } = petSelection;
+  const { home } = pages;
+  const { cards, visited } = home;
   return (
     <>
-      <PlantillaUno
+      <PlantillasTemplate
         visited={visited}
         pets={pets}
         page={cards}

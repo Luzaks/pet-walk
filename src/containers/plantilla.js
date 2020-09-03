@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../../components/globales/header';
-import { Container } from '../../styles/globalStyles';
-import Main from '../../components/globales/main';
-import Footer from '../../components/globales/footer';
+import Header from '../components/globales/header';
+import { Container } from '../styles/globalStyles';
+import Main from '../components/globales/main';
+import Footer from '../components/globales/footer';
 
-const PlantillaUno = ({ visited, pets, page }) => (
+const PlantillasTemplate = ({ visited, pets, page }) => (
   <Container>
     <Header />
     <Main
@@ -17,10 +17,10 @@ const PlantillaUno = ({ visited, pets, page }) => (
   </Container>
 );
 
-PlantillaUno.propTypes = {
+PlantillasTemplate.propTypes = {
   visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
   page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
-export default PlantillaUno;
+export default PlantillasTemplate;

@@ -5,8 +5,8 @@ import initialState from '../state/initialState';
 
 const App = () => {
   const { pets, pages } = initialState;
-  const { home } = pages;
-  const { cards, visited } = home;
+  const { petSelection } = pages;
+  const { cards, visited } = petSelection;
   return (
     <>
       <PlantillaUno

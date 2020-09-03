@@ -35,6 +35,20 @@ const initialState = {
         },
       ],
     },
+    petSelection: {
+      visited: 'Pet selection',
+      cards: [
+        {
+          title: 'On foot',
+        },
+        {
+          title: 'On bike',
+        },
+        {
+          title: 'Other',
+        },
+      ],
+    },
   },
 };
 

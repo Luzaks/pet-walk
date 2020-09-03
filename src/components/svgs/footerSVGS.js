@@ -5,7 +5,7 @@ import footerHelper from '../../helpers/footerHelper';
 const HomeIcon = ({ visited }) => {
   const [filled, setFilled] = useState('');
   useEffect(() => {
-    setFilled(footerHelper(visited, 'Home'));
+    setFilled(footerHelper(visited, 'Home', 'Pet selection'));
   }, []);
 
   return (

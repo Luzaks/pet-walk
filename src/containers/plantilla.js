@@ -20,7 +20,7 @@ const PlantillasTemplate = ({ visited, pets, page }) => (
 PlantillasTemplate.propTypes = {
   visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
-  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  page: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default PlantillasTemplate;

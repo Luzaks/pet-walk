@@ -6,33 +6,36 @@ import {
   SectionTitle,
 } from '../../styles/plantillaUnoStyle';
 import Dashboard from './Dashboard';
-import Stats from './Stats';
+import Sections from '../globales/Sections';
 import StartButton from './StartButton';
 
-const Home = ({ visited, pets, page }) => (
-  <>
-    <BodyTitle>
-      <h1>{visited}</h1>
-    </BodyTitle>
-    <Dash>
-      <SectionTitle>
-        Dashboard
-      </SectionTitle>
-      <Dashboard
-        pets={pets}
+const Home = ({ visited, pets, page }) => {
+  const { section } = page;
+  return (
+    <>
+      <BodyTitle>
+        <h1>{visited}</h1>
+      </BodyTitle>
+      <Dash>
+        <SectionTitle>
+          {section}
+        </SectionTitle>
+        <Dashboard
+          pets={pets}
+        />
+      </Dash>
+      <Sections
+        page={page}
       />
-    </Dash>
-    <Stats
-      page={page}
-    />
-    <StartButton />
-  </>
-);
+      <StartButton />
+    </>
+  );
+};
 
 Home.propTypes = {
   visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
-  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  page: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default Home;

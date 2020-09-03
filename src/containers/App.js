@@ -5,14 +5,14 @@ import initialState from '../state/initialState';
 
 const App = () => {
   const { pets, pages } = initialState;
-  const { home } = pages;
-  const { cards, visited } = home;
+  const { petSelection } = pages;
+  const { visited } = petSelection;
   return (
     <>
       <PlantillasTemplate
         visited={visited}
         pets={pets}
-        page={cards}
+        page={petSelection}
       />
       <GlobalStyles />
     </>

@@ -14,7 +14,7 @@ const Main = ({ visited, pets, page }) => (
 Main.propTypes = {
   visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
-  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  page: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default Main;

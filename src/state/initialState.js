@@ -11,6 +11,7 @@ const initialState = {
   pages: {
     home: {
       visited: 'Home',
+      section: 'Stats',
       cards: [
         {
           title: 'Today\'s plan',
@@ -37,6 +38,7 @@ const initialState = {
     },
     petSelection: {
       visited: 'Pet selection',
+      section: 'Method',
       cards: [
         {
           title: 'On foot',

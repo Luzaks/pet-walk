@@ -6,6 +6,7 @@ import {
 } from '../../styles/plantillaUnoStyle';
 import Selection from './Selection';
 import StartButton from '../plantillaUno/StartButton';
+import Sections from '../globales/Sections';
 
 const PetSelection = ({ visited, pets, page }) => (
   <>
@@ -20,6 +21,7 @@ const PetSelection = ({ visited, pets, page }) => (
         pets={pets}
       />
     </Dash>
+    <Sections page={page} />
     <StartButton />
   </>
 );
@@ -27,7 +29,7 @@ const PetSelection = ({ visited, pets, page }) => (
 PetSelection.propTypes = {
   visited: PropTypes.string.isRequired,
   pets: PropTypes.objectOf(PropTypes.any).isRequired,
-  page: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  page: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default PetSelection;

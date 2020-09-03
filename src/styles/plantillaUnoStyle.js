@@ -36,7 +36,7 @@ const Card = styled(BodyGeneralContainer)`
   padding: 0;
   border: 2px double #fff;
   border-radius: 7px;
-  box-shadow: inset 14px 16px 65px -13px rgb(1241, 243, 246),
+  box-shadow: ${props => props.inset},
               inset 38px -33px 102px -50px #fff,
               21px 21px 28px -16px rgba(110, 168, 255, 0.2),
               -29px -15px 65px -13px #fff;

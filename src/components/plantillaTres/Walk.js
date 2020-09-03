@@ -1,18 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BodyTitle } from '../../styles/plantillaUnoStyle';
-import { WalkCard } from '../../styles/plantillaTresStyle';
+import { RideCard } from '../../styles/plantillaTresStyle';
 import WalkedButton from './WalkedButton';
+import WalkCard from './WalkCard';
 
-const Walk = ({ visited, pets, page }) => (
-  <>
-    <BodyTitle>
-      <h1>{visited}</h1>
-    </BodyTitle>
-    <WalkCard />
-    <WalkedButton />
-  </>
-);
+const Walk = ({ visited, pets, page }) => {
+  const { img } = pets;
+  const { section, cards } = page;
+  return (
+    <>
+      <BodyTitle>
+        <h1>{visited}</h1>
+      </BodyTitle>
+      <RideCard>
+        <WalkCard img={img} cards={cards} />
+      </RideCard>
+      <WalkedButton
+        section={section}
+      />
+    </>
+  );
+};
 
 Walk.propTypes = {
   visited: PropTypes.string.isRequired,

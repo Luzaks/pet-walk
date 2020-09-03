@@ -60,7 +60,7 @@ const initialState = {
     },
     walk: {
       visited: 'Walk',
-      section: 'Walk',
+      section: 'End walk',
       cards: [
         {
           name: 'Distance',

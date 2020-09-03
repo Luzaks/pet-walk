@@ -58,6 +58,24 @@ const initialState = {
         },
       ],
     },
+    walk: {
+      visited: 'Walk',
+      section: 'Walk',
+      cards: [
+        {
+          name: 'Distance',
+          amount: '1,5 km',
+        },
+        {
+          name: 'Time',
+          amount: '25 min',
+        },
+        {
+          name: 'Objective',
+          amount: '62%',
+        },
+      ],
+    },
   },
 };
 

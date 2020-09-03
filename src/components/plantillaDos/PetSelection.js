@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  BodyTitle, Dash,
+  BodyTitle,
+  Dash,
   SectionTitle,
 } from '../../styles/plantillaUnoStyle';
 import Selection from './Selection';

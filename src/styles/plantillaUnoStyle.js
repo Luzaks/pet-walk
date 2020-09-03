@@ -128,7 +128,7 @@ const ButtonCont = styled(BodyGeneralContainer)`
   justify-content: center;
 `;
 
-const WalkButton = styled.button`
+const Button = styled.button`
   width: 331px;
   height: 53px;
   border: none;
@@ -138,9 +138,17 @@ const WalkButton = styled.button`
   font-family: Proxima, sans-serif;
   font-size: 14px;
   font-weight: 900;
+`;
+
+const WalkButton = styled(Button)`
   color: #fff;
   background-color: #6ea8ff;
   box-shadow: inset 12px 12px 70px -30px #fff;
+`;
+
+const FinishedButton = styled(Button)`
+  color: black;
+  border: 1px dashed blue;
 `;
 
 const ProgressCont = styled(BodyGeneralContainer)`
@@ -181,6 +189,7 @@ export {
   StatsTitle,
   ButtonCont,
   WalkButton,
+  FinishedButton,
   ProgressCont,
   Path,
 };

@@ -17,6 +17,7 @@ const Walk = ({ visited, pets, page }) => {
       </BodyTitle>
       <RideCard>
         <WalkCard
+          visited={visited}
           map={map}
           img={img}
           icon={position}

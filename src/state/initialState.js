@@ -80,6 +80,25 @@ const initialState = {
         },
       ],
     },
+    myPets: {
+      visited: 'My pets',
+      headline: 'Cats',
+      section: 'Dogs',
+      cards: [
+        {
+          brand: 'Bengal Cat',
+          name: 'Lucky',
+          age: '2 years old',
+          family: 'Cats',
+        },
+        {
+          brand: 'Manx  Cat',
+          name: 'Oreo',
+          age: '4 years old',
+          family: 'Cats',
+        },
+      ],
+    },
   },
 };
 

@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import {
   RideCont, RideContainer, RideProperties, PositionIcon,
 } from '../../styles/plantillaTresStyle';
-import walkCardHelper from '../../helpers/walkCardHelper';
+import sectionsHelper from '../../helpers/sectionsHelper';
 import { Image, ImageContainer } from '../../styles/plantillaUnoStyle';
 
 const WalkCard = ({
-  map, img, cards, icon,
+  map, img, cards, icon, visited,
 }) => (
   <RideContainer
     map={map}
   >
     <RideProperties>
       {
-        walkCardHelper(cards)
+        sectionsHelper(visited, cards)
       }
     </RideProperties>
     <RideCont>
@@ -31,6 +31,7 @@ WalkCard.propTypes = {
   img: PropTypes.string.isRequired,
   cards: PropTypes.arrayOf(PropTypes.any).isRequired,
   icon: PropTypes.string.isRequired,
+  visited: PropTypes.string.isRequired,
 };
 
 export default WalkCard;

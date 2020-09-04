@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../components/plantillaUno/Home';
 import PetSelection from '../components/plantillaDos/PetSelection';
 import Walk from '../components/plantillaTres/Walk';
+import MyPets from '../components/plantillaCuatro/MyPets';
 
 const mainHelper = (visited, pets, page) => {
   switch (visited) {
@@ -27,6 +28,12 @@ const mainHelper = (visited, pets, page) => {
           visited={visited}
           pets={pets}
           page={page}
+        />
+      );
+    case 'My pets':
+      return (
+        <MyPets
+          visited={visited}
         />
       );
     default:

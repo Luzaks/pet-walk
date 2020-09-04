@@ -27,6 +27,7 @@ const Dash = styled(BodyGeneralContainer)`
 
 const SectionTitle = styled.h2`
   position: relative;
+  margin: ${props => props.margin};
   top: 0;
   z-index: 2;
 `;
@@ -80,7 +81,7 @@ const Image = styled.div`
   border-radius: 50%;
   border: 2px double #fff;
   background-image: url(${props => props.img});
-  background-position: 35% 20%;
+  background-position: center center;
 `;
 
 const MoodCont = styled(BodyGeneralContainer)`

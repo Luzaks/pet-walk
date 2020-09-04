@@ -1,5 +1,7 @@
-import Pett from '../assets/images/dog.png';
+import Pett from '../assets/images/Dog.png';
 import Map from '../assets/images/Map.png';
+import Oreo from '../assets/images/Cat(1).png';
+import Lucky from '../assets/images/Cat.png';
 import Position from '../assets/images/positionIcon.png';
 
 const initialState = {
@@ -9,6 +11,7 @@ const initialState = {
     age: '6 months old',
     img: Pett,
     mood: 'Happy',
+    type: 'Dog',
   },
   pages: {
     home: {
@@ -84,18 +87,19 @@ const initialState = {
       visited: 'My pets',
       headline: 'Cats',
       section: 'Dogs',
+      specie: 'Cat',
       cards: [
         {
           brand: 'Bengal Cat',
           name: 'Lucky',
           age: '2 years old',
-          family: 'Cats',
+          img: Lucky,
         },
         {
           brand: 'Manx  Cat',
           name: 'Oreo',
           age: '4 years old',
-          family: 'Cats',
+          img: Oreo,
         },
       ],
     },

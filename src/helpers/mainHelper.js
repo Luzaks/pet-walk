@@ -34,6 +34,8 @@ const mainHelper = (visited, pets, page) => {
       return (
         <MyPets
           visited={visited}
+          pets={pets}
+          page={page}
         />
       );
     default:

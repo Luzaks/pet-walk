@@ -2,6 +2,7 @@ import React from 'react';
 import StatsCard from '../components/plantillaUno/StatsCard';
 import MethodCard from '../components/plantillaDos/MethodCard';
 import PropertyCard from '../components/plantillaTres/PropertyCard';
+import PetCard from '../components/plantillaCuatro/PetCard';
 
 const sectionsHelper = (section, cards) => {
   switch (section) {
@@ -27,6 +28,21 @@ const sectionsHelper = (section, cards) => {
       return (
         cards.map(card => (
           <PropertyCard
+            key={card.name}
+            card={card}
+          />
+        ))
+      );
+    case 'Dog':
+      return (
+        <PetCard
+          card={cards}
+        />
+      );
+    case 'Cat':
+      return (
+        cards.map(card => (
+          <PetCard
             key={card.name}
             card={card}
           />

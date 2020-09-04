@@ -29,13 +29,25 @@ const CatsCont = styled(Display)`
   height: 64.5%;
 `;
 
+const AddButtonCont = styled(BodyGeneralContainer)`
+  height: 33%;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8%; 
+`;
+
 const AddButton = styled.button`
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   border: none;
   outline: none; 
   color: #fff;
+  font-size: 40px;
+  font-weight: 900;
   background-color: #6ea8ff;
   box-shadow: inset 12px 12px 70px -30px #fff;
 `;
@@ -44,5 +56,6 @@ export {
   Dash,
   DogsCont,
   CatsCont,
+  AddButtonCont,
   AddButton,
 };

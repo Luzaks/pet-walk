@@ -8,8 +8,11 @@ import {
   Dash,
   DogsCont,
   CatsCont,
+  AddButtonCont,
+  AddButton,
 } from '../../styles/plantillaCuatroStyle';
 import sectionsHelper from '../../helpers/sectionsHelper';
+import { AddSVG } from '../svgs/myPetsSVGS';
 
 const MyPets = ({ visited, pets, page }) => {
   const {
@@ -45,6 +48,11 @@ const MyPets = ({ visited, pets, page }) => {
         }
         </CatsCont>
       </Dash>
+      <AddButtonCont>
+        <AddButton>
+          <AddSVG />
+        </AddButton>
+      </AddButtonCont>
     </>
   );
 };

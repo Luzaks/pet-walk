@@ -11,7 +11,7 @@ import {
 const Footer = ({ visited }) => (
   <Footy>
     <HomeIcon visited={visited} />
-    <PetIcon />
+    <PetIcon visited={visited} />
     <WorldIcon />
     <AccountIcon />
   </Footy>

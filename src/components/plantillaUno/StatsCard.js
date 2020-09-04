@@ -51,7 +51,7 @@ const StatsCard = ({ page }) => {
 };
 
 StatsCard.propTypes = {
-  page: PropTypes.objectOf(PropTypes.string).isRequired,
+  page: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default StatsCard;

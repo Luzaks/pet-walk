@@ -62,7 +62,7 @@ const initialState = {
     },
     walk: {
       visited: 'Walk',
-      section: 'End walk',
+      section: 'End the walk',
       map: Map,
       position: Position,
       cards: [

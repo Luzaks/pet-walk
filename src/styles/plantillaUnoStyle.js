@@ -148,7 +148,11 @@ const WalkButton = styled(Button)`
 
 const FinishedButton = styled(Button)`
   color: black;
-  border: 1px dashed blue;
+  border: 1px solid #fff;
+  box-shadow: inset 14px 16px 65px -13px rgba(0, 0, 0, 0.05),
+              inset 38px -33px 102px -50px #fff,
+              21px 21px 28px -16px rgba(110, 168, 255, 0.3),
+              -29px -15px 65px -13px #fff;
 `;
 
 const ProgressCont = styled(BodyGeneralContainer)`

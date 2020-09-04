@@ -15,7 +15,6 @@ const Walk = ({ visited, pets, page }) => {
       <BodyTitle>
         <h1>{visited}</h1>
       </BodyTitle>
-      {console.log(page)}
       <RideCard>
         <WalkCard
           map={map}

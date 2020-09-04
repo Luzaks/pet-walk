@@ -30,7 +30,7 @@ WalkCard.propTypes = {
   map: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   cards: PropTypes.arrayOf(PropTypes.any).isRequired,
-  position: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default WalkCard;

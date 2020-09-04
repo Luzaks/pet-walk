@@ -69,6 +69,8 @@ const RideSVG = styled.svg`
 const PositionIcon = styled.div`
   width: 42px;
   height: 42px;
+  position: relative;
+  bottom: 1%;
   border-radius: 50%;
   background: url(${props => props.icon}) center center no-repeat;
   background-size: cover;

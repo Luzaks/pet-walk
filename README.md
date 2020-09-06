@@ -63,22 +63,22 @@ Una nueva ventana se abrirá en tu navegador predeterminado.
 Para navegar a través de las plantillas será necesario cambiar la página visitada de forma manual, en el componente App dentro de la carpeta containers, cambiando el nombre de la plantilla  en las líneas 8, 9 y 15, de la siguiente manera indicada:
 
 *   Plantilla Uno:
-    Es la plantilla predeterminada por defecto, la línes 8, 9 y 15 indican que se trata de la plantilla home o plantilla uno.
+    Es la plantilla predeterminada por defecto, la línes 8, 9 y 15 indican que se trata de la plantilla home o plantilla uno, por favor escribe home como en las zonas destacadas que se muestran en la imagen.
 
 <div align="center"><img src="./src/assets/images/home.png" alt="home-code-sample"></div>
 
 *   Plantilla Dos:
-    Es la plantilla diseñada para la sección de una mascota, la línes 8, 9 y 15 indican que se trata de la plantilla petSelection o plantilla dos.
+    Es la plantilla diseñada para la sección de una mascota, la línes 8, 9 y 15 indican que se trata de la plantilla petSelection o plantilla dos, por favor escribe petSelection como en las zonas destacadas que se muestran en la imagen.
 
 <div align="center"><img src="./src/assets/images/petSelection.png" alt="petSelection-code-sample"></div>
 
 *   Plantilla Tres:
-    Es la plantilla diseñada para indicar la ubicación y ruta del pase con su mascota, la línes 8, 9 y 15 indican que se trata de la plantilla walk o plantilla tres.
+    Es la plantilla diseñada para indicar la ubicación y ruta del pase con su mascota, la línes 8, 9 y 15 indican que se trata de la plantilla walk o plantilla tres, por favor escribe walk como en las zonas destacadas que se muestran en la imagen.
 
 <div align="center"><img src="./src/assets/images/walk.png" alt="walk-code-sample"></div>
 
 *   Plantilla Cuatro:
-    Es la plantilla diseñada para observar a todas las mascotas que pertenecen al usuario, la línes 8, 9 y 15 indican que se trata de la plantilla myPets o plantilla cuatro.
+    Es la plantilla diseñada para observar a todas las mascotas que pertenecen al usuario, la línes 8, 9 y 15 indican que se trata de la plantilla myPets o plantilla cuatro, por favor escribe myPets como en las zonas destacadas que se muestran en la imagen.
 
 <div align="center"><img src="./src/assets/images/myPets.png" alt="myPets-code-sample"></div>
 

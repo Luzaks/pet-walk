@@ -58,6 +58,11 @@ npm start
 
 Una nueva ventana se abrirá en tu navegador predeterminado.
 
+*   En una pestaña diferente de tu bash, para revisar los linters, dentro de la misma carpeta del proyecto puedes correr:
+```
+npx eslint .
+```
+
 ## Modo de uso local
 
 Para navegar a través de las plantillas será necesario cambiar la página visitada de forma manual, en el componente App dentro de la carpeta containers, cambiando el nombre de la plantilla  en las líneas 8, 9 y 15, de la siguiente manera indicada:

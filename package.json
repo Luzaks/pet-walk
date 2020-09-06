@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --port 3000",
-    "build": "webpack --mode=production"
+    "build": "bower install && grunt build"
   },
   "keywords": [],
   "author": "Luzaks",

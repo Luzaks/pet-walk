@@ -14,7 +14,11 @@
 ## 👉 Acerca del proyecto
 
 En este proyecto se crearon 4 diferentes plantillas, para una aplicación movil, utilizando React desde cero.
-Se estructuró el layout y se ajustó a los requerimientos de diseño pedidos, con un viewport máximo 416 x 812 pixeles y uno ideal de 375 x 812 pixeles.
+Se estructuró el layout y se ajustó a los requerimientos de diseño pedidos, con un viewport máximo 416 x 812 pixeles, y uno ideal de 375 x 812 pixeles, que puede ser explorado a traves de las developer tools de tu navegador favorito.
+
+En la live version se presenta la plantilla con más componentes y animaciones de todas las construidas.
+
+[<p align="center">Live Version</p>](pet-walk.netlify.app)
 
 ## 👉 Pet walk
 

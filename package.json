@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --open --port 3000",
-    "build": "bower install && grunt build"
+    "start": "webpack-dev-server --mode=development --open --port 3000 --host 0.0.0.0 ",
+    "build": "webpack --mode=production"
   },
   "keywords": [],
   "author": "Luzaks",

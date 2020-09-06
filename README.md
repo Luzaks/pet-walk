@@ -1,7 +1,5 @@
 # :hibiscus: Pet walk - Plantillas :hibiscus:
 
-[<p align="center">Live Version</p>]()
-
 ## 📝 Table of Contents
 
 * [Acerca del poryecto](#-acerca-del-proyecto)
@@ -16,11 +14,12 @@
 ## 👉 Acerca del proyecto
 
 En este proyecto se crearon 4 diferentes plantillas, para una aplicación movil, utilizando React desde cero.
-Se estructuró el layout y se ajustó a los requerimientos de diseño pedidos.
+Se estructuró el layout y se ajustó a los requerimientos de diseño pedidos, con un viewport máximo 416 x 812 pixeles y uno ideal de 375 x 812 pixeles.
 
 ## 👉 Pet walk
 
-Pet walk consiste en cuatro plantillas client side, las cuales son las siguientes:
+Pet walk consiste en cuatro plantillas client side desarrolladas en React con maquetación reusable y estructurada de acuerdo a esto, dentro del proyecto. 
+Se decidió hacerlo de esta forma para mostrar con mayor claridad la reusabilidad de los estilos y componentes. 
 
 ### 👉 Plantilla uno
   

@@ -18,7 +18,7 @@ Se estructuró el layout y se ajustó a los requerimientos de diseño pedidos, c
 
 En la live version se presenta la plantilla con más componentes y animaciones de todas las construidas.
 
-[<p align="center">Live Version</p>](pet-walk.netlify.app)
+[<p align="center">Live Version</p>](https://pet-walk.netlify.app/)
 
 ## 👉 Pet walk
 

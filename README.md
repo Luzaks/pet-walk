@@ -20,6 +20,10 @@ En la live version se presenta la plantilla con más componentes y animaciones d
 
 [<p align="center">Live Version</p>](https://pet-walk.netlify.app/)
 
+En el pull-request se pueden apreciar las linters de Eslint que verifican el código escrito por medio de las GitHub Actions.
+
+[<p align="center">Pull-request</p>](https://github.com/Luzaks/pet-walk/pull/1)
+
 ## 👉 Pet walk
 
 Pet walk consiste en cuatro plantillas client side desarrolladas en React con maquetación reusable y estructurada de acuerdo a esto, dentro del proyecto. 
@@ -58,7 +62,7 @@ npm start
 
 Una nueva ventana se abrirá en tu navegador predeterminado.
 
-*   En una pestaña diferente de tu bash, para revisar los linters, dentro de la misma carpeta del proyecto puedes correr:
+*   En una pestaña diferente de tu bash, para revisar las linters de forma local, dentro de la misma carpeta del proyecto puedes correr:
 ```
 npx eslint .
 ```
